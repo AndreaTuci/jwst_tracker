@@ -1,7 +1,23 @@
-This script requires Selenium to run. To install it, run the command:
+## Installation
 
-	pip install selenium
+	pip install -r requirements
 
-The path for geckodriver (if you have Firefox installed) in the Service object may also need to be changed depending on what OS you're using.
+This script run on Linux. 
 
-Just wrote this script as a quick fun project, hope you enjoy!
+It searches the path for geckodriver in your computer.
+
+## Usage
+
+```python
+# launch track.py to make a single survey
+python track.py
+
+# add -i [x] -g [y] 
+# to make [x] iterations every [y] minutes
+python track.py -i 10 -g 20  #10 iterations every 20 mins
+
+# lauch plot.py to visualize your data
+python plot.py
+```
+
+This is a fun project, fork from <a href='https://github.com/sp-merrow/jwst_tracker'>sp-merrow's jwst_tracker</a>
